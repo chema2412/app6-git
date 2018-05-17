@@ -1,0 +1,423 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batalla Del 5 De Mayo</title>
+
+<!--Aqui va el Primer Visor De Imagenes -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--Aqui va El segundo Visor De imagenes -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Aqui va El Tercer Visor De Imagenes-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine3/style.css" />
+<script type="text/javascript" src="engine3/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+	
+<!--Aqui va El Cuarto Visor De imagenes -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine4/style.css" />
+<script type="text/javascript" src="engine4/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temaApp6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!-- grupo javascript-->
+<script src ="js/jquery-1.11.2.min.js"></script>
+<script src ="js/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src ="js/acciones.js"></script>-->
+<script src ="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/Heroes.png','imagenes/imagen1.jpg','imagenes/imagen4.jpg')">
+
+<div data-role="page" id "Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+   <h1>Batallas Del 5 De Mayo</h1>
+</div>
+<div data-role="main" class="ul-content">
+ <div data-role="collapsible" data-content-theme="false">
+  <h1> Batalla De Puebla </h1>
+   <div>
+   <br>
+   </div>
+   <div> 
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image_sus01','','imagenes/Heroes.png',1)"><img src="imagenes/fotoperfil.png" width="30%" height="30%" id="Image_sus01"></a>
+    </div>
+    </div>
+    </div>
+    <div data-role="main" class="ul-content">
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>5 De Mayo </h1>
+   <div>
+   <br>
+   </div>
+   <div> 
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('image_Sus02','','imagenes/imagen1.jpg',1)"><img src="imagenes/imagen2.jpg" width="30%" height="auto" id="image_Sus02"></a> </div>
+    </div>
+    </div>
+<div>
+ <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>4 De Mayo</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>5 De Mayo</h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Inicio Del Conflicto</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Monumentos De La Batalla y/o Museos que Existen De La batalla </h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Heroes De La Batalla</h2>
+   </a>
+   </li>
+  </ul>
+  </div> 
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+    <img src ="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+      <h4>Aplicacion Seis </h4>
+      <h4>Jesus Emmanuel Gonzalez Ramirez</h4>
+   </div>
+  </div>
+  </div>
+  
+ <div data-role="page" id="Pagina1" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1>4 De Mayo</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div > 
+     <h2> 4 De Mayo</h2>
+      <p> Para los dias que corren , todos los ciudadanos mexicanos sabemos perfectamente que el 5 de mayo de 1862 nuestras armas nacionales, representadas por el Cuerpo de Ejército de Oriente,que mandaba el general Ignacio Zaragoza, se cubrieron de gloria a l rechazar, en l a ciudad de Puebla, el ataque emprendido por el ejército expedicionario francés que invadió nuestra patria en los comienzos de aquella lucha armada internacional, que ha quedado registrada en nuestra historia como la Guerra de la Intervención Francesa. Pero si todos los mexicanos sabemos lo anterior, considero, en cambio, que sólo muy pocos saben que l a brillante victoria de aquel dí a pudo ser alcanzada por el general Zaragoza, no sólo por el valor desplegado por las tropas que tenía bajo su
+mando inmediato y por las excelentes y atinadas disposiciones que dictó en el curso del combate, sino también, y muy particularmente, porque otras tropas mexicanas, pertenecientes al mismo Cuerpo de Ejército de Oriente, el dí a 4 anterior obtuvieron una señalada victoria en las cercanías del pueblo de Atlixco (unos 30 kilómetros al suroeste de la ciudad de Puebla), sobre los traidores que encabezaba el funesto general Leonardo Márquez , impidiendo, con aquel triunfo, que estos malos mexicanos se unieran a los invasores en aquella ocasión y les ayudaran al ataque de la capital poblana.  </p>
+<br>
+<h2>¿Un Ejercito Nacional? </h2>
+<p> Para el mediodía, cuando comenzó el fuego de artillería francés, los cerca de cinco mil soldados mexicanos estaban ubicados donde lo dispuso su jefe y parecían razonablemente disciplinados. Los civiles estaban encerrados en sus casas o habían buscado refugio en otras poblaciones. La ciudad, el estado de Puebla... todo el país había sido puesto en estado de sitio para enfrentar a los invasores y expulsarlos del territorio nacional. Sin embargo, creer que éste era un ejército nacional es un error de apreciación e interpretación que se ha repetido durante 150 años.
+
+ 
+
+La fuerza que estaba a punto de batirse contra los franceses, el Cuerpo de Ejército de Oriente comandado por Zaragoza, era una confederación de fuerzas militares regionales, la primera que tuvo una victoria sobre un ejército extranjero. El hecho de que esta fuerza militar haya podido estar donde estaba al mediodía del 5 de mayo de 1862 es acaso más notable y extraordinario que la derrota que habría de infringir a los invasores franceses en la batalla que ocurrió en las horas siguientes.
+
+ 
+
+En diciembre de 1860 los liberales terminaron con la capacidad del bando conservador para controlar partes significativas del territorio nacional, pero no lo derrotaron definitivamente. Transformadas en unidades guerrilleras, sus fuerzas hostilizaban intermitentemente e impedían que el gobierno tomara el control del territorio y pudiera, en suma, gobernar. A partir de abril de 1862, tras la retirada de los contingentes españoles y británicos, cuando comenzó formalmente la invasión francesa, los prohombres conservadores en el exilio regresaron e intentaron restablecer su gobierno, mientras que las guerrillas de esa facción intensificaban sus acciones: Juan Vicario en las montañas de Guerrero, Tomás Mejía en la Sierra Gorda de Querétaro, Manuel Lozada en el cantón de Tepic, etcétera.</p>
+ <!-- Este Div Contiene El Segundo visor de imagenes -->
+  <div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/4may1.jpg" alt="4may1" title="4may1" id="wows2_0"/></li>
+		<li><img src="data2/images/4may2.jpg" alt="4may2" title="4may2" id="wows2_1"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/4may3.jpg" alt="wowslider.com" title="4may3" id="wows2_2"/></a></li>
+		<li><img src="data2/images/4may4.jpg" alt="4may4" title="4may4" id="wows2_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="4may1"><span><img src="data2/tooltips/4may1.jpg" alt="4may1"/>1</span></a>
+		<a href="#" title="4may2"><span><img src="data2/tooltips/4may2.jpg" alt="4may2"/>2</span></a>
+		<a href="#" title="4may3"><span><img src="data2/tooltips/4may3.jpg" alt="4may3"/>3</span></a>
+		<a href="#" title="4may4"><span><img src="data2/tooltips/4may4.jpg" alt="4may4"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  </div>
+ </div>
+ </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+     <img src ="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <h4>Aplicacion Seis, JEGR</h4>
+   </div>
+  </div>
+  
+<div data-role="page" id="Pagina2" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1>5 De Mayo</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div >
+     <h2>5 de mayo de 1862, la batalla por la dignidad</h2>
+     <p> Al mediodía del 5 de mayo de 1862 las tres baterías de cañones de la fuerza expedicionaria francesa abrieron fuego contra los fortines de Loreto y Guadalupe, dos antiguas edificaciones religiosas a las que se habían agregado obras de defensa durante la guerra de Independencia para proteger a la ciudad de Puebla de las fuerzas insurgentes. El plan de ataque del ejército comandado por el general Charles Ferdinand Latrille, conde de Lorencez, era simplísimo: tomar a sangre y fuego estas fortificaciones erigidas en el cerro Acueyametepec o de Loreto y Guadalupe, único punto desde el que se podía oponer alguna resistencia; una vez logrado esto, ocupar la capital de Puebla, desde donde se prepararía la campaña definitiva sobre la ciudad de México, y así concluir la operación lo antes posible. </p>
+     <br>
+     <p>La batalla que comenzaba parecía un simple trámite. Nueve días atrás, en su último reporte antes de abandonar Orizaba, el conde de Lorencez había planteado así las cosas a Édouard Thouvenel, ministro de asuntos extranjeros de su país:</p>
+     <br>
+     <p>" Tenemos sobre los mexicanos tal superioridad de raza, de organización, de disciplina, de moralidad y de elevación de sentimientos, que suplico a Vuestra Excelencia se sirva decir al Emperador, que desde ahora, a la cabeza de sus seis mil hombres, soy dueño de México. "</p>
+     <br>
+     <h2>Los Atacantes</h2>
+     <p> Los cálculos franceses para las operaciones bélicas en México se hicieron bajo el supuesto de que se sumarían a las fuerzas interventoras grandes contingentes de militares mexicanos. Por ello, para su aventura en América Napoleón III no destinó cientos de miles de hombres –como había hecho unos años atrás en el mar Negro– ni grandes flotillas para bloquear puertos, tomar el control de rutas comerciales y transportar, completos, cuerpos de ejército, como en las operaciones en Indochina iniciadas dos años antes. Parecía tratarse, más bien, de una operación limitada en la que la acción de un pequeño contingente podría tener consecuencias enormes, como había ocurrido en China en 1858, donde ocho mil franceses derrotaron a más de cuarenta mil soldados nativos.</p>
+     <h2>Los Defensores</h2>
+     <p> A las nueve de la mañana del 5 de mayo de 1862, una de las piezas de artillería instaladas en el fuerte de Guadalupe disparó una salva, señal convenida para prevenir de la presencia del enemigo en la zona. De inmediato, las campanas de la catedral de Puebla comenzaron a tocar a rebato para que tanto las unidades militares como la población civil hicieran los últimos preparativos de guerra.</p>
+     <hr>
+     <!--Este Div Contiene el Tercer Visor De Imagenes -->
+     <div>
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container3">
+<div class="ws_images"><ul>
+		<li><img src="data3/images/5may1.jpg" alt="5may1" title="5may1" id="wows3_0"/></li>
+		<li><img src="data3/images/5may2.jpg" alt="5may2" title="5may2" id="wows3_1"/></li>
+		<li><img src="data3/images/5may3.jpg" alt="5may3" title="5may3" id="wows3_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data3/images/5may4.jpg" alt="wowslider" title="5may4" id="wows3_3"/></a></li>
+		<li><img src="data3/images/5may5.jpg" alt="5may5" title="5may5" id="wows3_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="5may1"><span><img src="data3/tooltips/5may1.jpg" alt="5may1"/>1</span></a>
+		<a href="#" title="5may2"><span><img src="data3/tooltips/5may2.jpg" alt="5may2"/>2</span></a>
+		<a href="#" title="5may3"><span><img src="data3/tooltips/5may3.jpg" alt="5may3"/>3</span></a>
+		<a href="#" title="5may4"><span><img src="data3/tooltips/5may4.jpg" alt="5may4"/>4</span></a>
+		<a href="#" title="5may5"><span><img src="data3/tooltips/5may5.jpg" alt="5may5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine3/wowslider.js"></script>
+<script type="text/javascript" src="engine3/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+     <div>
+     <div data-role="main" class="ui-content" align="center">
+<div style="width:30%">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="c"
+  <li class="ui-first-child ui-last-child">
+  <a href="http://relatosehistorias.mx/"  data-role="button">
+  <h2>5 De Mayo</h2>
+  </a>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+     <img src ="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <h4>Aplicacion Seis, JEGR</h4>
+   </div>
+  </div>
+  
+<div data-role="page" id="Pagina3" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1>Inicio Del Conflicto</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div >
+     <p>La Batalla de Puebla fue una cruenta batalla librada por el ejercito mexicano, dirigido por Ignacio Zaragoza, durante el gobierno de Benito Juárez, ante una invasión del ejército francés, y la cual culminó con la retirada de las tropas francesas luego de su rendición, el 5 de mayo de 1862</p>
+     <h2>Antecedentes</h2>
+     <p>Para 1862 se encontraba México sumido en una grave crisis económica y social, por la llamada “Guerra de los 3 años”. Para aquel momento histórico, Benito Juárez accede al poder y realiza un pronunciamiento en donde pide al menos 2 años de tregua en el pago de una deuda a Francia, a España y a Inglaterra, por lo que suspendió el pago de la misma. Esta situación no agradó a los acreedores, que además de su pago, tendrían otros intereses de ocupación, expansión y económicos en América.
+
+Con la suspensión de los pagos, y la tregua de 2 años para poder pagar, se forma una coalición de los tres países, España, Francia e Inglaterra, con el fin de invadir México para obligarlos a pagar la deuda. Ante estos hechos, Benito Juárez se prepara con un ejército de 4.800 hombres, al mando de Ignacio Zaragoza .</p>
+<h2>Protagonistas</h2> 
+<p> Benito Juárez, presidente durante los hechos, Ignacio Zaragoza, Comandante del Ejército de la República Mexicana, Charles Ferdinand Latrille, Conde de Lorence , comando del Ejército Francés.</p>
+<h2>Causas De La Batalla </h2>
+<p> Existieron causas aparentes y causas que no lo fueron, o simplemente excusas, pero todos los aspectos mencionados fueron causas de la Batalla de Puebla; era claro que la República de México se encontraba sumida en crisis y tenía una deuda con Francia, España e Inglaterra; deuda que por la crisis, Benito Juárez, presidente de la época decidió no pagar por el momento y solicitar una tregua de 2 años para pagarla.
+
+Esta decisión de no pagar por el momento, disgustó a los acreedores de la deuda y decidieron agruparse para invadir a la Republica de México y cobrarse sus deudas, adicionalmente, cada uno de estos 3 países tenían intereses mas allá de la deuda; tenían intereses económicos, mineros y de expansión de sus negocios, también de colonización de territorios.</p>
+<hr>
+ <div>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('image_Sus03','','imagenes/imagen4.jpg',1)"><img src="imagenes/imagen3.jpg" width="612" height="381" id="image_Sus03"></a>
+   </div>
+   <hr>
+   <div>
+     <div data-role="main" class="ui-content" align="center">
+<div style="width:30%">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="c"
+  <li class="ui-first-child ui-last-child">
+  <a href= "https://www.paxala.com/"  data-role="button">
+  <h2>Mas Info</h2>
+  </a>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+     </div>
+ </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+     <img src ="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <h4>Aplicacion Seis, JEGR</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina4" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1>Monumentos De la batalla</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div >
+		 <h2> Consejo Estatal para la Cultura y las Artes de Puebla</h2>
+         <p>Ejército de Oriente s/n y Unidad Cívica 5 de Mayo Col. Moctezuma CP 72260 Heróica Puebla De Zaragoza, Puebla, Puebla Tels.: (222) 232 15 28, 232 01 32 </p>
+		<h2>Emblematico Monumento a Ignacio Zaragoza </h2>
+		 <p>Después de entregar el mando del Ejército de Oriente al general Jesús González Ortega el 3 de septiembre de 1862, sus síntomas empeoraron. Cinco días después, el general falleció a sus 33 años de edad, lejos del campo de batalla. En su honor, Benito Juárez develó el 4 de mayo de 1868 un monumento póstumo en Panteón de San Fernando.</p>
+		  <h2>Monumento A La Victoria Del 5 Del Mayo</h2>
+         <p>En la zona de los Fuertes de Loreto y Guadalupe, Un Monumento que se encontraba en el olvido y que ahora con los 150 años de la Batalla del 5 de Mayo le han vuelto a dar vida. Inaugurado el 5 de Mayo de 1962 para conmemorar el 1er Centenario. </p>
+		<h2>Fuerte De Guadalupe </h2>
+		 <p>Hoy modernizado, fue el escenario de la batalla de 1862 el 5 de mayo,es otro conjunto arquitectónico que destaca en la capital poblana, sobre la avenida de los Fuertes. En 1816 fue construido sobre la cúspide del cerro que antiguamente se llamaba de Belén, un templo dedicado a la Virgen de Guadalupe. En 1862 cuando arribaron los invasores franceses a Puebla, el fuerte fue parcialmente destruido, al igual que el pequeño templo que se encontraba ahí</p>
+		 <h2>Casa De Alfeñique</h2>
+		 <p>Construida en 1790, conserva muchas pinturas virreinales, exhibe la historia de Puebla, como la batalla del 5 de mayo de 1862, y conserva su capilla domestica con retablo barroco de lamina de oro, tallado en madera.</p>
+		 <h2>Fuerte De Loreto</h2>
+		 <p>Escenario de la batalla del 5 de mayo de 1862, fue una iglesia del siglo XVIII, su fachada es un ejemplo del barroco novohispano.</p>
+		 <hr>
+		 <div>
+			 <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container4">
+<div class="ws_images"><ul>
+		<li><img src="data4/images/museo1.jpg" alt="museo1" title="museo1" id="wows4_0"/></li>
+		<li><img src="data4/images/museo2.jpg" alt="museo2" title="museo2" id="wows4_1"/></li>
+		<li><img src="data4/images/museo3.jpg" alt="museo3" title="museo3" id="wows4_2"/></li>
+		<li><img src="data4/images/museo4.jpg" alt="museo4" title="museo4" id="wows4_3"/></li>
+		<li><a href="http://wowslider.com"><img src="data4/images/museo5.jpg" alt="slider" title="museo5" id="wows4_4"/></a></li>
+		<li><img src="data4/images/museo6.jpg" alt="museo6" title="museo6" id="wows4_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="museo1"><span><img src="data4/tooltips/museo1.jpg" alt="museo1"/>1</span></a>
+		<a href="#" title="museo2"><span><img src="data4/tooltips/museo2.jpg" alt="museo2"/>2</span></a>
+		<a href="#" title="museo3"><span><img src="data4/tooltips/museo3.jpg" alt="museo3"/>3</span></a>
+		<a href="#" title="museo4"><span><img src="data4/tooltips/museo4.jpg" alt="museo4"/>4</span></a>
+		<a href="#" title="museo5"><span><img src="data4/tooltips/museo5.jpg" alt="museo5"/>5</span></a>
+		<a href="#" title="museo6"><span><img src="data4/tooltips/museo6.jpg" alt="museo6"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine4/wowslider.js"></script>
+<script type="text/javascript" src="engine4/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+		 <hr>
+		   <div data-role="main" class="ui-content" align="center">
+<div style="width:30%">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="c"
+  <li class="ui-first-child ui-last-child">
+  <a href= "http://puebla.travel/"  data-role="button">
+  <h2>Mas Acerca De</h2>
+  </a>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+     </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+     <img src ="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <h4>Aplicacion Seis, JEGR</h4>
+   </div>
+  </div>
+  
+  
+  <div data-role="page" id="Pagina5" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1> Heroes De La Batalla</h1>
+    </div>
+<div data-role="content" align="center">
+     <div >
+     <h2> Ignacio Zaragoza </h2>
+     <p> Militar mexicano. De ideas progresistas, luchó contra la dictadura de Santa Anna y apoyó a Benito Juárez durante la Guerra de Reforma (1858-1960), contribuyendo decisivamente a la victoria final de los liberales. Dos años después, en los inicios de la invasión francesa de México, obtuvo una brillante victoria en la batalla de Puebla (5 de mayo de 1862), por la que es honrado como héroe nacional; lamentablemente, una enfermedad puso fin a su vida pocos meses después, a los treinta y tres años de edad. </p>
+     <h2>Miguel Negrete</h2>
+     <p>“Yo tengo Patria antes que partido...”, dijo el general conservador Miguel Negrete cuando se puso a las órdenes del presidente Benito Juárez para enfrentar a los invasores franceses. Nacido en Tepeaca, Puebla, el 8 de marzo de 1824, cambió al menos tres veces de bando y, pese a todo, no es considerado traidor.
+Desde el 4 de mayo, Ignacio Zaragoza le ordenó a Negrete que ocupara los cerros de Loreto y Guadalupe. Los soldados bajo su mando, hombres del pueblo llano, indígenas en su mayoría, llevaron sobre sus hombros el peso principal de la batalla, siendo los primeros en entablar el combate cuerpo a cuerpo con el enemigo, donde pudo más su arrojo que la disciplina y experiencia militar de los legendarios zuavos.</p>
+     <h2>Felipe Berriozabal</h2>
+     <p>La mañana del célebre 5 de mayo de 1862 el general Felipe B. Berriozábal, comandante de la 1ª Brigada de Infantería del Ejército de Oriente, recibió la orden del general en jefe, Ignacio Zaragoza, de conducir a paso veloz a sus hombres para reforzar las defensas de los baluartes de Loreto y Guadalupe. Reaccionó así al movimiento imprevisto de las columnas francesas que se acercaban para asaltar los cerros, en donde estarían atrincherados los hombres de la 2ª División al mando del general Miguel Negrete.</p>
+     <h2>Maximiliano De Habsburgo</h2>
+     <p>(Viena, 1832 - Querétaro, México, 1867) Emperador de México (1864-1867). Maximiliano era un archiduque de la Casa de Habsburgo, hermano del emperador Francisco José I de Austria y yerno del rey belga Leopoldo I. En 1857 fue nombrado gobernador de las provincias italianas de Lombardía y el Véneto, pertenecientes al Imperio Austriaco; y, como tal, sufrió el ataque del Piamonte que, con el apoyo militar del Segundo Imperio francés, le arrebató la Lombardía y puso en marcha la unificación de Italia en 1859.</p>
+     <h2>Benito Juarez</h2>
+     <p>Su labor modernizadora topó con inmensas dificultades: la reacción conservadora dio lugar a la guerra de Reforma (1858-1860) y los problemas económicos motivaron el impago de la deuda y la intervención francesa en México (1863-1867). No menos convulsos fueron sus últimos años, y las deserciones surgidas de su propio partido llevarían, tras su fallecimiento, a la longeva dictadura de Porfirio Díaz. Pese a que pocas de sus realizaciones fueron duraderas, su entrega a unos ideales de justicia social es justamente apreciada, y la historiografía lo reconoce como la figura capital del liberalismo mexicano en el siglo XIX.</p>
+     <h2>Porfirio Diaz</h2> 
+     <p> (José de la Cruz Porfirio Díaz Mori; Oaxaca, 1830 - París, 1915) Del nombre de este militar y estadista mexicano procede la designación de todo un periodo de la historia moderna de México: el Porfiriato (1876-1911). Y el mismo sufijo ya sugiere lo que fue: una férrea dictadura personalista y paternalista que reprimió toda oposición y anuló la libertad de prensa.</p>
+     <hr>
+     <!--Aqui Esta El Visor De Imagenes -->
+     <div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/heroe1.jpg" alt="heroe1" title="heroe1" id="wows1_0"/></li>
+		<li><img src="data1/images/heroe2.jpg" alt="heroe2" title="heroe2" id="wows1_1"/></li>
+		<li><img src="data1/images/heroe3.jpg" alt="heroe3" title="heroe3" id="wows1_2"/></li>
+		<li><img src="data1/images/heroe4.jpg" alt="heroe4" title="heroe4" id="wows1_3"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/heroe5.jpg" alt="http://wowslider.net/" title="heroe5" id="wows1_4"/></a></li>
+		<li><img src="data1/images/heroe6.jpg" alt="heroe6" title="heroe6" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="heroe1"><span><img src="data1/tooltips/heroe1.jpg" alt="heroe1"/>1</span></a>
+		<a href="#" title="heroe2"><span><img src="data1/tooltips/heroe2.jpg" alt="heroe2"/>2</span></a>
+		<a href="#" title="heroe3"><span><img src="data1/tooltips/heroe3.jpg" alt="heroe3"/>3</span></a>
+		<a href="#" title="heroe4"><span><img src="data1/tooltips/heroe4.jpg" alt="heroe4"/>4</span></a>
+		<a href="#" title="heroe5"><span><img src="data1/tooltips/heroe5.jpg" alt="heroe5"/>5</span></a>
+		<a href="#" title="heroe6"><span><img src="data1/tooltips/heroe6.jpg" alt="heroe6"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+     <div data-role="main" class="ui-content" align="center">
+<div style="width:30%">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="c"
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.biografiasyvidas.com/" data-role="button">
+  <h2>Biografias</h2>
+  </a>
+  </ul>
+  </div>
+  </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+     <img src ="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <h4>Aplicacion Seis, JEGR</h4>
+   </div>
+  </div>
+</body>
+</html>
